@@ -1,0 +1,13 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .projects .card[style*="grid-column: span 2"] {
+    grid-column: span 2; /* melebar dua kolom kalau ada ruang */
+  }
+  @media (max-width: 700px) {
+    .projects .card[style*="grid-column: span 2"] {
+      grid-column: span 1; /* di HP jadi satu kolom */
+    }
+  }
