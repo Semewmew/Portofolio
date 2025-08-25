@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio — William Jonathan</title>
+  <meta name="description" content="Portofolio pribadi William Jonathan: profil, keahlian, dan proyek." />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="stylesheet" href="../Portofolio/CSS/style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="container navwrap">
+      <a href="#" class="logo"><strong>William Jonathan</strong></a>
+      <div class="links">
+        <a href="#about">Tentang</a>
+        <a href="#projects">Proyek</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#contact">Kontak</a>
+        <button class="btn" onclick="toggleTheme()" aria-label="Ganti tema">🌓 Tema</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="section">
+    <div class="container hero">
+      <div>
+        <p class="muted">Halo, saya</p>
+        <h1 class="title">William Jonathan — <span class="muted">Jurusan Teknologi Informasi</span></h1>
+        <p class="subtitle">Mahasiswa dengan fokus <strong>Network Administration</strong> & <strong>UI/UX</strong>.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">Lihat Proyek</a>
+          <a class="btn" href="#contact">✉️ Hubungi</a>
+          <a class="btn" href="assets/CV Magang.pdf" download>⬇️ Unduh CV</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="avatar">
+          <img src="assets/profil.jpeg" alt="Foto profil William Jonathan" />
+        </div>
+        <div class="muted">Tersedia Untuk Bekerja</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container grid about">
+      <div class="card">
+        <h2 class="title">Tentang Saya</h2>
+        <p>Saya William Jonathan, Mahasiswa UBSI. Tertarik pada <strong>Administrasi Jaringan</strong>, <strong>UI/UX</strong>, <strong>Aplikasi</strong>, <strong>Microsoft</strong>,dan <strong>Web Sederhana</strong></p>
+        <p class="muted">Lokasi: Depok • Bahasa: Indonesia, Inggris</p>
+      </div>
+      <div class="card">
+        <h3>Projek Kuliah</h3>
+        <ul>
+          <li>Merancang Skema <strong>Network Administrator Madya</strong></li>
+          <li>Mendesain UI/UX <strong>Website Game Store</strong></li>
+          <li>Membangun <strong>Aplikasi Sistem Pakar</strong></li>
+          <li>Membangun <strong>Aplikasi AR 3D Character Among Us</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="title">Keahlian</h2>
+      <div class="skills">
+        <span class="chip">Administrasi Jaringan</span>
+        <span class="chip">Subnetting & VLAN</span>
+        <span class="chip">Cisco Packet Tracer</span>
+        <span class="chip">UI/UX Design</span>
+        <span class="chip">Figma</span>
+        <span class="chip">HTML/CSS/JS</span>
+        <span class="chip">Microsoft</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container grid projects">
+      
+      <!-- Proyek 1 -->
+      <article class="card proj-card" data-proj data-tags="jaringan, cisco, subnetting">
+        <img src="assets/Skema serkom network administrasi madya.png" alt="Topologi jaringan" style="max-width:100%; height:auto; max-height:250px; object-fit:cover; border-radius:12px;">
+        <h3>Skema Network Administrator Madya</h3>
+        <p class="muted">Perancangan & konfigurasi jaringan dengan 3 router (Cisco Packet Tracer), mencakup subnetting, routing, VLAN, dan dokumentasi.</p>
+        <div class="proj-tags">
+          <span class="chip">Jaringan</span>
+          <span class="chip">Cisco</span>
+          <span class="chip">VLAN</span>
+        </div>
+        <div class="proj-actions">
+          <a class="btn" href="assets/network-administrator-madya.pkt" download>⬇️ Unduh Topologi</a>
+        </div>
+      </article>
+  
+      <!-- Proyek 2 -->
+      <article class="card proj-card" data-proj data-tags="uiux, desain, figma">
+        <img src="assets/ui_ux website game store - Google Chrome 14_08_2025 20_00_43.png" alt="UI/UX Game Store" style="max-width:100%; height:auto; max-height:250px; object-fit:cover; border-radius:12px;">
+        <h3>UI/UX — Website Game Store</h3>
+        <p class="muted">Desain alur pengguna, wireframe, dan high-fidelity design untuk website toko game: katalog, detail produk, keranjang, dan pembayaran.</p>
+        <div class="proj-tags">
+          <span class="chip">UI/UX</span>
+          <span class="chip">Figma</span>
+          <span class="chip">Prototype</span>
+        </div>
+        <div class="proj-actions">
+          <a class="btn" href="https://www.figma.com/design/haAfpD3wNqGSmDTZhwWLlE/ui-ux-website-game-store?node-id=0-1&t=DLfEcodPYH7TmJLA-1">Lihat Figma</a>
+        </div>
+      </article>
+  
+      <!-- Proyek 3 -->
+      <article class="card proj-card" data-proj data-tags="aplikasi, sistem pakar, kesehatan">
+        <img src="assets/Python 3.10 14_08_2025 21_17_59.png" alt="Aplikasi Sistem Pakar" style="max-width:100%; height:auto; max-height:250px; object-fit:cover; border-radius:12px;">
+        <h3>Aplikasi Sistem Pakar Alergi Sinus</h3>
+        <p class="muted">Aplikasi berbasis rule sederhana untuk membantu identifikasi gejala alergi sinus dan rekomendasi awal.</p>
+        <div class="proj-tags">
+          <span class="chip">Aplikasi</span>
+          <span class="chip">Sistem Pakar</span>
+          <span class="chip">Rule-based</span>
+        </div>
+        <div class="proj-actions">
+          <a class="btn" href="assets/cek alergi.rar" download>⬇️ Unduh Python</a>
+        </div>
+      </article>
+  
+      <!-- Proyek 4 -->
+      <article class="card proj-card" data-proj data-tags="aplikasi, AR, games">
+        <img src="assets/AR.jpeg" alt="Aplikasi AR Among Us" style="max-width:100%; height:auto; max-height:250px; object-fit:cover; border-radius:12px;">
+        <h3>Aplikasi AR Among Us Character 3D</h3>
+        <p class="muted">Aplikasi AR sederhana dengan karakter 3D untuk hiburan dan permainan.</p>
+        <div class="proj-tags">
+          <span class="chip">Aplikasi</span>
+          <span class="chip">AR</span>
+          <span class="chip">Unity</span>
+        </div>
+        <div class="proj-actions">
+          <a class="btn" href="assets/amogus ar updated.apk" download>⬇️ Unduh APK</a>
+        </div>
+      </article>
+  
+    </div>
+  </section>
+  
+  <!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container contact-wrapper">
+    <h2 class="title" style="text-align:center;">Kontak</h2>
+    <p class="muted" style="text-align:center;">
+      Tertarik bekerja sama? Kirim pesan lewat form atau hubungi langsung lewat info di bawah.
+    </p>
+    
+    <!-- Form Kontak -->
+    <div class="card contact-card">
+      <h3 style="margin-top:0; text-align:center;">Form Kontak</h3>
+      <form action="https://formspree.io/f/mrbazjge" method="POST">
+        <label class="sr-only" for="nama">Nama</label>
+        <input id="nama" name="nama" placeholder="Nama" required>
+      
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email" required>
+      
+        <label class="sr-only" for="pesan">Pesan</label>
+        <textarea id="pesan" name="pesan" placeholder="Pesan" required></textarea>
+      
+        <button class="btn" type="submit">Kirim</button>
+      </form>
+
+      <script>
+        document.getElementById("contact-form").addEventListener("submit", async function(e) {
+          e.preventDefault(); // cegah reload
+          const form = e.target;
+        
+          // kirim data ke Formspree
+          const response = await fetch("https://formspree.io/f/mrbazjge", {
+            method: "POST",
+            body: new FormData(form),
+            headers: { "Accept": "application/json" }
+          });
+        
+          if (response.ok) {
+            alert("✅ Terima kasih! Pesan kamu sudah terkirim.");
+            form.reset();
+          } else {
+            alert("❌ Maaf, terjadi kesalahan. Coba lagi ya.");
+          }
+        });
+        </script>
+    </div>
+
+    <!-- Info Kontak -->
+    <div class="card contact-card">
+      <h3 style="margin-top:0; text-align:center;">Info Kontak</h3>
+      <ul class="info-list">
+        <li>📧 <strong>Email:</strong> <a href="mailto:semewmew123@gmail.com">semewmew123@gmail.com</a></li>
+        <li>📱 <strong>Nomor HP/WA:</strong> <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></li>
+        <li>📍 <strong>Alamat:</strong> Jln. Komplek Mutiara Duta, Depok</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-wrapper">
+      <span>© <span id="year"></span> William Jonathan</span>
+      <a href="#" class="btn">⬆️ Ke atas</a>
+    </div>
+  </footer>
+
+  <script src="../Portofolio/JS/script.js"></script>
+</body>
+</html>
